@@ -22,7 +22,7 @@ class MediaListViewModel: ObservableObject {
     private var cancellableSet : Set<AnyCancellable> = []
     
     
-    //MARK: Initialiazer
+    //MARK: - Initialiazer
     init(
         mediaList: Result<Array<MediaModel>,Error> = .success([]),
         mediaService: MediaListServiceProtocol = MediaListService()

@@ -18,8 +18,12 @@ struct MediaListView: View {
             List {
                 getMediaListRows
             }
+            .navigationTitle("Media List")
         }
         .refreshable {
+            viewModel.fetchList()
+        }
+        .task {
             viewModel.fetchList()
         }
     }
@@ -39,13 +43,17 @@ struct MediaListView: View {
                 }
             }
         case .failure(_):
-            VStack {
+            VStack(alignment: .center) {
                 Image(systemName: "xmark.circle")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
                     .symbolRenderingMode(.palette)
                     .foregroundStyle(.red)
+                    .frame(maxWidth: 40)
                 Text("Failed to get list. \nPull to refresh or try again later.")
                     .font(.callout)
                     .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
             }
             
         }
