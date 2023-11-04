@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		274CA2372AF3A9FD00BF45CD /* SADAD_AssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CA2362AF3A9FD00BF45CD /* SADAD_AssignmentApp.swift */; };
-		274CA2392AF3A9FD00BF45CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CA2382AF3A9FD00BF45CD /* ContentView.swift */; };
+		274CA2392AF3A9FD00BF45CD /* MediaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CA2382AF3A9FD00BF45CD /* MediaListView.swift */; };
 		274CA23B2AF3A9FE00BF45CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274CA23A2AF3A9FE00BF45CD /* Assets.xcassets */; };
 		274CA23F2AF3A9FE00BF45CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274CA23E2AF3A9FE00BF45CD /* Preview Assets.xcassets */; };
 		274CA2492AF3A9FE00BF45CD /* SADAD_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274CA2482AF3A9FE00BF45CD /* SADAD_AssignmentTests.swift */; };
@@ -18,6 +18,9 @@
 		27A2F2362AF53CB500FC0350 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2F2352AF53CB500FC0350 /* MediaModel.swift */; };
 		27A2F2382AF5542600FC0350 /* MediaListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2F2372AF5542600FC0350 /* MediaListServiceTests.swift */; };
 		27A2F23B2AF5F56D00FC0350 /* MediaRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2F23A2AF5F56D00FC0350 /* MediaRowView.swift */; };
+		27A2F23E2AF5FE7900FC0350 /* MediaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2F23D2AF5FE7900FC0350 /* MediaListViewModel.swift */; };
+		27A2F2402AF60E1B00FC0350 /* MediaListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2F23F2AF60E1B00FC0350 /* MediaListViewModelTests.swift */; };
+		27A2F2432AF60E8700FC0350 /* MockMediaListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2F2422AF60E8700FC0350 /* MockMediaListService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 /* Begin PBXFileReference section */
 		274CA2332AF3A9FD00BF45CD /* SADAD Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SADAD Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		274CA2362AF3A9FD00BF45CD /* SADAD_AssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SADAD_AssignmentApp.swift; sourceTree = "<group>"; };
-		274CA2382AF3A9FD00BF45CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		274CA2382AF3A9FD00BF45CD /* MediaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListView.swift; sourceTree = "<group>"; };
 		274CA23A2AF3A9FE00BF45CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		274CA23C2AF3A9FE00BF45CD /* SADAD_Assignment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SADAD_Assignment.entitlements; sourceTree = "<group>"; };
 		274CA23E2AF3A9FE00BF45CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -53,6 +56,9 @@
 		27A2F2352AF53CB500FC0350 /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
 		27A2F2372AF5542600FC0350 /* MediaListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListServiceTests.swift; sourceTree = "<group>"; };
 		27A2F23A2AF5F56D00FC0350 /* MediaRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRowView.swift; sourceTree = "<group>"; };
+		27A2F23D2AF5FE7900FC0350 /* MediaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListViewModel.swift; sourceTree = "<group>"; };
+		27A2F23F2AF60E1B00FC0350 /* MediaListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListViewModelTests.swift; sourceTree = "<group>"; };
+		27A2F2422AF60E8700FC0350 /* MockMediaListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMediaListService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		274CA2352AF3A9FD00BF45CD /* SADAD Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				27A2F23C2AF5FE3000FC0350 /* ViewModels */,
 				27A2F2392AF567CF00FC0350 /* Views */,
 				27A2F2342AF53C7600FC0350 /* Models */,
 				27A2F2312AF53B0600FC0350 /* Services */,
@@ -125,8 +132,10 @@
 		274CA2472AF3A9FE00BF45CD /* SADAD AssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				27A2F2412AF60E6C00FC0350 /* Mock */,
 				274CA2482AF3A9FE00BF45CD /* SADAD_AssignmentTests.swift */,
 				27A2F2372AF5542600FC0350 /* MediaListServiceTests.swift */,
+				27A2F23F2AF60E1B00FC0350 /* MediaListViewModelTests.swift */,
 			);
 			path = "SADAD AssignmentTests";
 			sourceTree = "<group>";
@@ -159,10 +168,26 @@
 		27A2F2392AF567CF00FC0350 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				274CA2382AF3A9FD00BF45CD /* ContentView.swift */,
+				274CA2382AF3A9FD00BF45CD /* MediaListView.swift */,
 				27A2F23A2AF5F56D00FC0350 /* MediaRowView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		27A2F23C2AF5FE3000FC0350 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				27A2F23D2AF5FE7900FC0350 /* MediaListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		27A2F2412AF60E6C00FC0350 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				27A2F2422AF60E8700FC0350 /* MockMediaListService.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,8 +321,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A2F2362AF53CB500FC0350 /* MediaModel.swift in Sources */,
+				27A2F23E2AF5FE7900FC0350 /* MediaListViewModel.swift in Sources */,
 				27A2F23B2AF5F56D00FC0350 /* MediaRowView.swift in Sources */,
-				274CA2392AF3A9FD00BF45CD /* ContentView.swift in Sources */,
+				274CA2392AF3A9FD00BF45CD /* MediaListView.swift in Sources */,
 				274CA2372AF3A9FD00BF45CD /* SADAD_AssignmentApp.swift in Sources */,
 				27A2F2332AF53B3400FC0350 /* MediaListService.swift in Sources */,
 			);
@@ -307,6 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A2F2432AF60E8700FC0350 /* MockMediaListService.swift in Sources */,
+				27A2F2402AF60E1B00FC0350 /* MediaListViewModelTests.swift in Sources */,
 				27A2F2382AF5542600FC0350 /* MediaListServiceTests.swift in Sources */,
 				274CA2492AF3A9FE00BF45CD /* SADAD_AssignmentTests.swift in Sources */,
 			);
@@ -475,7 +503,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -514,7 +542,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;

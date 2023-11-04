@@ -11,7 +11,7 @@ import SwiftUI
 struct SADAD_AssignmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MediaListView()
         }
     }
 }

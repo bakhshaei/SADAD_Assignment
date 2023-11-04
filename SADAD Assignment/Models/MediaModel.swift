@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MediaModel: Codable {
+struct MediaModel: Codable, Equatable {
     var title: String?
     var type: MediaType
     var previewLink: String?
