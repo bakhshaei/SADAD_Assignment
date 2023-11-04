@@ -17,6 +17,7 @@
 		27A2F2332AF53B3400FC0350 /* MediaListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2F2322AF53B3400FC0350 /* MediaListService.swift */; };
 		27A2F2362AF53CB500FC0350 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2F2352AF53CB500FC0350 /* MediaModel.swift */; };
 		27A2F2382AF5542600FC0350 /* MediaListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2F2372AF5542600FC0350 /* MediaListServiceTests.swift */; };
+		27A2F23B2AF5F56D00FC0350 /* MediaRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2F23A2AF5F56D00FC0350 /* MediaRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		27A2F2322AF53B3400FC0350 /* MediaListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListService.swift; sourceTree = "<group>"; };
 		27A2F2352AF53CB500FC0350 /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
 		27A2F2372AF5542600FC0350 /* MediaListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListServiceTests.swift; sourceTree = "<group>"; };
+		27A2F23A2AF5F56D00FC0350 /* MediaRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +103,10 @@
 		274CA2352AF3A9FD00BF45CD /* SADAD Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				27A2F2392AF567CF00FC0350 /* Views */,
 				27A2F2342AF53C7600FC0350 /* Models */,
 				27A2F2312AF53B0600FC0350 /* Services */,
 				274CA2362AF3A9FD00BF45CD /* SADAD_AssignmentApp.swift */,
-				274CA2382AF3A9FD00BF45CD /* ContentView.swift */,
 				274CA23A2AF3A9FE00BF45CD /* Assets.xcassets */,
 				274CA23C2AF3A9FE00BF45CD /* SADAD_Assignment.entitlements */,
 				274CA23D2AF3A9FE00BF45CD /* Preview Content */,
@@ -152,6 +154,15 @@
 				27A2F2352AF53CB500FC0350 /* MediaModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		27A2F2392AF567CF00FC0350 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				274CA2382AF3A9FD00BF45CD /* ContentView.swift */,
+				27A2F23A2AF5F56D00FC0350 /* MediaRowView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A2F2362AF53CB500FC0350 /* MediaModel.swift in Sources */,
+				27A2F23B2AF5F56D00FC0350 /* MediaRowView.swift in Sources */,
 				274CA2392AF3A9FD00BF45CD /* ContentView.swift in Sources */,
 				274CA2372AF3A9FD00BF45CD /* SADAD_AssignmentApp.swift in Sources */,
 				27A2F2332AF53B3400FC0350 /* MediaListService.swift in Sources */,
